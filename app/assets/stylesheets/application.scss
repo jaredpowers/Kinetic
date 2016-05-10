@@ -13,3 +13,63 @@
  *= require_tree .
  *= require_self
  */
+$primary-color: #BAD761;
+$secondary-color: #333333;
+$blue: #64C9D5;
+
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+ @import url(https://fonts.googleapis.com/css?family=Roboto:400,700|Oswald);
+
+
+ html {
+   background: url(http://images.designtrends.com/wp-content/uploads/2015/12/15053549/Abstract-Grey-Background.png) no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+ }
+
+ img {max-width: 10em;max-height:10em;background-color: antiquewhite}
+
+ html {
+   position: relative;
+   height: 100%;
+ }
+
+ h1, h2, h3, h4, h5, h6, .btn, .btn-default {
+   font-family: Oswald, sans-serif;
+ }
+
+ body {
+   font-family: Roboto, sans-serif;
+   margin-top: 12em;
+   min-width: 100%;
+   min-height: 100%;
+   width: auto;
+   height: auto;
+   background-color: none;
+ }
+
+ .nav > li > a {
+   color: white;
+ }
+
+.navbar {
+  background-color: $primary-color;
+  border-bottom: .7em solid $secondary-color;
+  padding: .2em 0;
+  div {
+    border: none;
+      margin-top: 3em;
+    a.nav-link {
+      font-size: 1.2em;
+      font-family: Roboto;
+      color: $secondary-color;
+      &:hover {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+
+  <h1> Listing facilities </h1>
+    <p id="notice"><%= notice %></p>
+
+<hr>
+<div>
+  <% @facilities.each do |fac| %>
+      <div class = "col-xs-6">
+        <div class = "fac-pic">
+          <img src="<%=fac.img_url%>">
+        </div>
+        <div class = "fac-name">
+          <h5> <%= fac.name %> </h5>
+        </br>
+          <h5> <%= fac.address %> </h5>
+        </div>
+      </br>
+      </br>
+      </div>
+  <% end %>
+</div>
