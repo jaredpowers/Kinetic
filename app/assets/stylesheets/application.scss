@@ -30,7 +30,7 @@ $blue: #64C9D5;
    background-size: cover;
  }
 
- img {max-width: 10em;max-height:10em;background-color: antiquewhite}
+ img {max-width: auto;;max-height:10em;background-color: antiquewhite}
 
  html {
    position: relative;
@@ -51,18 +51,20 @@ $blue: #64C9D5;
    background-color: none;
  }
 
- .nav > li > a {
-   color: white;
- }
+.container {
+  background-color: none;
+}
+
 
 .navbar {
   background-color: $primary-color;
   border-bottom: .7em solid $secondary-color;
-  padding: .2em 0;
+  padding: .2em 0 .2em 0;
   div {
+    padding-right: 2em;
     border: none;
-      margin-top: 3em;
-    a.nav-link {
+    margin-top: 3em;
+    a{
       font-size: 1.2em;
       font-family: Roboto;
       color: $secondary-color;
