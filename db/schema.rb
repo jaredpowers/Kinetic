@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160509215018) do
+ActiveRecord::Schema.define(version: 20160511181412) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 20160509215018) do
   create_table "comments", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.text     "comment"
+    t.text     "body"
   end
 
   create_table "facilities", force: :cascade do |t|
@@ -31,13 +31,6 @@ ActiveRecord::Schema.define(version: 20160509215018) do
     t.string   "contact"
     t.string   "img_url"
     t.string   "url"
-  end
-
-  create_table "sports", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string   "name"
-    t.string   "sport_img"
   end
 
   create_table "users", force: :cascade do |t|
@@ -64,6 +57,7 @@ ActiveRecord::Schema.define(version: 20160509215018) do
     t.inet     "current_sign_in_ip"
     t.inet     "last_sign_in_ip"
     t.string   "zip_code"
+    t.text     "sports"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
