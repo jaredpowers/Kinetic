@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :facilities
-  resources :comments
+  resources :facilities do
+    resources :comments
+  end
   resources :users
 
   root 'dashboard#home'

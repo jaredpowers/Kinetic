@@ -4,7 +4,9 @@
         <% if signed_in? %>
           <ul>
             <a><%= link_to "Facilities", facilities_path %></a>
-            <a><%= link_to "My Dashboard", user_path(:id) %></a>
+            <a> | </a>
+            <a><%= link_to "My Dashboard", root_path %></a>
+            <a> | </a>
             <a><%= link_to "Sign Out", destroy_user_session_path, method: "delete" %></a>
           </ul>
         <% else %>

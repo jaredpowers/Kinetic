@@ -1,5 +1,5 @@
 class AddColToComment < ActiveRecord::Migration
   def change
-    add_column :comments, :comment, :text
+    add_column :comments, :text
   end
 end
