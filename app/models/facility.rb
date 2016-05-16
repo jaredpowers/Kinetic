@@ -1,3 +1,4 @@
 class Facility < ActiveRecord::Base
-  has_many :comments
+
+  acts_as_commontable
 end
