@@ -1,6 +1,6 @@
 
 <h1> User Dashboard for <%= current_user.name %> </h1>
-</br>
+<hr>
 <div>
   <div class = "col-xs-9">
     <div class = "avatar">
@@ -28,19 +28,37 @@
     </br>
     </div>
   </div>
+  <div class="container">
+	<div class="row">
+    <div id="custom-search-input">
+      <div class="input-group col-xs-10">
+          <input type="text" class="  search-query form-control" placeholder="Search for Coaches by Name, Zip Code, or Sport" />
+          <span class="input-group-btn">
+              <button class="btn" type="button">
+                  <span class=" glyphicon glyphicon-search"></span>
+              </button>
+          </span>
+      </div>
+    </div>
+	</div>
+</br>
+</br>
+</div>
   <div class="coach-display">
+    <h3> Coaches: </h3>
+    </br>
     <% @coach.each do |c| %>
       <div class = "col-xs-4">
         <div class = "coach-pic">
           <img src="<%=c.avatar%>">
         </div>
-        <div class = "fac-name">
-          <h5> <%= c.name %> </h5>
-        </br>
-          <h5> <%= c.zip_code %> </h5>
-        </br>
-        </br>
+        <div class = "coach-text">
+          <h4> <%= c.name %> </h4>
+          <h5> Sports: <%= c.sports %> </h5>
+          <h5> Zip Code: <%= c.zip_code %> </h5>
         </div>
+        </br>
+        </br>
       </div>
     <% end %>
 

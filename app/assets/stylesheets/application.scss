@@ -23,22 +23,29 @@ $blue: #64C9D5;
 
 
  html {
-   background: url(http://images.designtrends.com/wp-content/uploads/2015/12/15053549/Abstract-Grey-Background.png) no-repeat center center fixed;
+   background: url(http://images.designtrends.com/wp-content/uploads/2015/12/15053549/Abstract-Grey-Background.png) no-repeat 50% 50% fixed;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
    background-size: cover;
+   background-color: none;
  }
 
- img {max-width: auto;;max-height:10em;background-color: antiquewhite}
+ .fac-pic {
+      img {max-width: auto;;max-height:20em;background-color: antiquewhite auto;
+      display: block;
+      margin: 15px auto;
+    }
+ }
 
  html {
    position: relative;
    height: 100%;
  }
 
- h1, h2, h3, h4, h5, h6, .btn, .btn-default {
+ h1, h2, h3, h4, h5, h6, a, .btn, .btn-default {
    font-family: Oswald, sans-serif;
+   color: $primary-color;
  }
 
  body {
@@ -48,11 +55,11 @@ $blue: #64C9D5;
    min-height: 100%;
    width: auto;
    height: auto;
-   background-color: none;
+   background: none;
  }
 
 .container {
-  background-color: none;
+  background: none;
 }
 
 
@@ -74,4 +81,29 @@ $blue: #64C9D5;
       }
     }
   }
+}
+
+.fac-name {
+  text-align: center;
+  color: $primary-color;
+  a {
+    &:hover {
+    text-decoration: none;
+    color: white;
+  }
+ }
+}
+
+.show-pic {
+  margin-left: auto;
+  margin-right: auto;
+  img {
+    max-width: 40em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.fac-desc {
+  color: $primary-color;
 }
