@@ -1,3 +1,5 @@
+<a href="https://codeclimate.com/github/jaredpowers/Kinetic"><img src="https://codeclimate.com/github/jaredpowers/Kinetic/badges/gpa.svg" /></a>
+
 == README
 
 This README would normally document whatever steps are necessary to get the
