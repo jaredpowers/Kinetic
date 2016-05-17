@@ -1,0 +1,27 @@
+<h1> <%= @user.name %> </h1>
+<hr>
+<div>
+  <div class = "col-xs-9">
+    <div class = "avatar">
+      <img src="<%=@user.avatar%>">
+      <%= button_to( "Update Profile", {:action => "edit", :controller => "users"}, :method => :get) %>
+    </div>
+
+    <br>
+    <div class = "user-info">
+      <h5>City: <%= @user.city %> </h5>
+    </br>
+    </br>
+      <h5>Sports: <%= @user.sports %> </h5>
+    </br>
+    </br>
+      <h5>Positions: <%= @user.positions %> </h5>
+    </br>
+    </br>
+      <h5>Stats: <%= @user.stats %> </h5>
+    </br>
+    </br>
+      <h5>Bio: <%= @user.bio %> </h5>
+    </br>
+  </div>
+</div>

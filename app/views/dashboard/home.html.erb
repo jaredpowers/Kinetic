@@ -1,11 +1,14 @@
 
-<h1> User Dashboard for <%= current_user.name %> </h1>
+<div>
+  <h1> User Dashboard for <%= current_user.name %> </h1>
+</div>
 <hr>
 <div>
   <div class = "col-xs-9">
     <div class = "avatar">
       <img src="<%=@user.avatar%>">
     </div>
+    <%= link_to('Edit your profile info', edit_user_path(@user), :class => 'btn btn-large btn-primary')  %>
     <br>
     <div class = "user-info">
       <h5>City: <%= @user.city %> </h5>
@@ -22,13 +25,13 @@
     </br>
       <h5>Bio: <%= @user.bio %> </h5>
     </br>
-    </br>
-    </br>
-    </br>
-    </br>
-    </br>
-    </div>
   </div>
+</div>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
   <div class="container">
 	<div class="row">
     <div id="custom-search-input">
@@ -51,10 +54,14 @@
     <% @coach.each do |c| %>
       <div class = "col-xs-4">
         <div class = "coach-pic">
-          <img src="<%=c.avatar%>">
+          <%= link_to user_path(c) do %>
+            <img src="<%=c.avatar%>">
+          <% end %>
         </div>
         <div class = "coach-text">
-          <h4> <%= c.name %> </h4>
+          <a>
+            <h4> <%= link_to c.name, user_path(c) %> </h4>
+          </a>
           <h5> Sports: <%= c.sports %> </h5>
           <h5> Zip Code: <%= c.zip_code %> </h5>
         </div>

@@ -108,3 +108,48 @@ $blue: #64C9D5;
 .fac-desc {
   color: $primary-color;
 }
+
+.coach-display {
+  img {
+    max-width: auto;
+    max-height: 10em;
+  }
+}
+
+.avatar {
+  img {
+    max-height: 25em;
+    max-width: auto;
+  }
+}
+
+.form-inputs {
+  color: $primary-color;
+}
+
+.radio {
+  display: inline-block;
+}
+
+.formtext {
+  color: black;
+  width: 100%;
+}
+
+input[type=radio],
+input.radio {
+  float: left;
+  clear: none;
+  margin: 4px 0 0 4px;
+}
+
+.inlinebox {
+  color: $primary-color;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}

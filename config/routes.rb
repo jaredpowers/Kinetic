@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :facilities do
-    resources :comments
-  end
+  resources :facilities
   resources :users
 
   mount Commontator::Engine => '/commontator'

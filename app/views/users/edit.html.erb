@@ -1,0 +1,49 @@
+<h1> Change your profile information with the form below: </h1>
+
+<%= form_for @user do |u| %>
+  <div class="form-inputs">
+    <%= u.hidden_field :user_id, :value => current_user %><br>
+    <br>
+      <div class="inlinebox">
+        <form role="form">
+          <label class="radio-inline">
+            <input type="radio" name="coach" value=false>I am an Athlete
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="coach" value=true>I am a Coach
+          </label>
+        </form>
+      </div>
+    <br>
+    <br>
+    <br>
+    Profile Pic:<br> <label class="formtext"><%= u.text_field :avatar, required: false %></label><br>
+    <br>
+    Name:<br><label class="formtext"> <%= u.text_field :name, required: true %></label><br>
+    <br>
+    City:<br><label class="formtext"> <%= u.text_field :city, require: true %></label><br>
+    <br>
+    Team:<br><label class="formtext"> <%= u.text_field :team, required: false %></label><br>
+    <br>
+    Bio:<br><label class="formtext"> <%= u.text_field :bio, type: :text, required: true %></label><br>
+    <br>
+    Credentials:<br><label class="formtext"> <%= u.text_field :credentials, require: true %></label><br>
+    <br>
+    Stats:<br><label class="formtext"> <%= u.text_field :stats, require: true %></label><br>
+    <br>
+    Phone:<br><label class="formtext"> <%= u.text_field :phone, require: true %></label><br>
+    <br>
+    E-mail:<br><label class="formtext"> <%= u.text_field :email, require: true %></label><br>
+    <br>
+    Zip Code:<br><label class="formtext"> <%= u.text_field :zip_code, require: true %></label><br>
+    <br>
+    Sports:<br><label class="formtext"> <%= u.text_field :sports, require: true %></label><br>
+    <br>
+  </div>
+  <div class="form-actions">
+    <%= u.submit %>
+  </div>
+<% end %>
+<br>
+<br>
+<br>

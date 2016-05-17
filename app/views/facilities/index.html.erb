@@ -15,7 +15,7 @@
             <h4> <%= link_to fac.name, facility_path(fac) %> </h4>
           </a>
         </br>
-          <h5> <%= link_to fac.address, facility_path(fac) %> </h5>
+          <h5> <%= link_to fac.address, fac.map_url %> </h5>
         </br>
         <%= commontator_thread(fac) %>
         </br>
