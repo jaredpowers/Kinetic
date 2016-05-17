@@ -4,24 +4,32 @@
   <div class = "col-xs-9">
     <div class = "avatar">
       <img src="<%=@user.avatar%>">
-      <%= button_to( "Update Profile", {:action => "edit", :controller => "users"}, :method => :get) %>
     </div>
 
     <br>
     <div class = "user-info">
-      <h5>City: <%= @user.city %> </h5>
+      <h3>City: <%= @user.city %> </h3>
     </br>
     </br>
-      <h5>Sports: <%= @user.sports %> </h5>
+      <h3>Zip: <%= @user.zip_code %> </h3>
     </br>
     </br>
-      <h5>Positions: <%= @user.positions %> </h5>
+      <h3>Team: <%= @user.team %> </h3>
     </br>
     </br>
-      <h5>Stats: <%= @user.stats %> </h5>
+      <h3>Sports: <%= @user.sports %> </h3>
     </br>
     </br>
-      <h5>Bio: <%= @user.bio %> </h5>
+      <h3>Bio: <%= @user.bio %> </h3>
     </br>
+    </br>
+      <h3>Phone: <%= @user.phone %> </h3>
+    </br>
+    </br>
+      <h3>Email: <%= @user.email %> </h3>
+    </br>
+    <br>
+    <br>
+    <br>
   </div>
 </div>

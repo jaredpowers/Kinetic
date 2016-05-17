@@ -8,22 +8,24 @@
     <div class = "avatar">
       <img src="<%=@user.avatar%>">
     </div>
+    <br>
     <%= link_to('Edit your profile info', edit_user_path(@user), :class => 'btn btn-large btn-primary')  %>
     <br>
+    <br>
     <div class = "user-info">
-      <h5>City: <%= @user.city %> </h5>
+      <h3>City: <%= @user.city %> </h3>
     </br>
     </br>
-      <h5>Sports: <%= @user.sports %> </h5>
+      <h3>Sports: <%= @user.sports %> </h3>
     </br>
     </br>
-      <h5>Positions: <%= @user.positions %> </h5>
+      <h3>Positions: <%= @user.positions %> </h3>
     </br>
     </br>
-      <h5>Stats: <%= @user.stats %> </h5>
+      <h3>Stats: <%= @user.stats %> </h3>
     </br>
     </br>
-      <h5>Bio: <%= @user.bio %> </h5>
+      <h3>Bio: <%= @user.bio %> </h3>
     </br>
   </div>
 </div>
