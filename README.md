@@ -2,8 +2,7 @@
 
 <blockquote class="imgur-embed-pub" lang="en" data-id="a/c6JNx"><a href="//imgur.com/a/c6JNx">UMLs and WireFrames for Kinetic</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
-<a href="https://trello.com/b/t1ZmW7A7">
-</a>
+https://trello.com/b/t1ZmW7A7
 
 == README
 
