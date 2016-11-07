@@ -111,8 +111,40 @@ $blue: #64C9D5;
 }
 
 .bigtext {
+  color: #7B8083;
+  font-size: 4em;
+  text-align: center;
+}
+
+.loginbox {
+  background-color: rgba(0,0,0,0.8);
+  border-radius: 2em;
+  padding: 1em 1em;
+
+}
+
+.field {
+  padding-bottom: 1.2em;
+}
+
+.actions {
+  padding-bottom: 1.2em;
+}
+
+label {
+  color: #7B8083;
+}
+
+input#user_email {
+  font-size: 1.25em;
+}
+
+input#user_password {
+  font-size: 1.25em;
+}
+
+input[type="submit"]{
   color: black;
-  font-size: 7em;
 }
 
 .coach-display {
@@ -130,7 +162,7 @@ $blue: #64C9D5;
 }
 
 .form-inputs {
-  color: $primary-color;
+  color: black;
 }
 
 .radio {
