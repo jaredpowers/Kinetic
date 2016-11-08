@@ -120,11 +120,11 @@ $blue: #64C9D5;
   background-color: rgba(0,0,0,0.8);
   border-radius: 2em;
   padding: 1em 1em;
-
 }
 
 .field {
   padding-bottom: 1.2em;
+  text-align: center;
 }
 
 .actions {
@@ -137,10 +137,12 @@ label {
 
 input#user_email {
   font-size: 1.25em;
+  width: 20em;
 }
 
 input#user_password {
   font-size: 1.25em;
+  width: 20em;
 }
 
 input[type="submit"]{
