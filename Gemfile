@@ -58,3 +58,4 @@ end
 gem 'devise'
 gem 'commontator'
 gem "codeclimate-test-reporter", group: :test, require: nil
+gem 'react-rails'
